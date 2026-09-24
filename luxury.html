@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
 <title>Private Rehab Exercise Coach in Bangkok, at Your Hotel or Residence | Maison Aurelle</title>
 <meta name="description" content="Private rehab exercise coaching in Bangkok. Certified corrective exercise specialist Thanaphon "Boss" Chamnanyantarakij comes to your hotel suite or residence to help with back, neck, shoulder and knee problems. From ฿2,500 per hour, 6am to 10pm, seven days a week.">
 <link rel="canonical" href="https://www.example.com/">
@@ -26,12 +26,12 @@
       "@type": ["HealthAndBeautyBusiness", "SportsActivityLocation"],
       "@id": "https://www.example.com/#business",
       "name": "Maison Aurelle Private Rehab",
-      "description": "Private, in-residence rehab exercise coaching in Bangkok. Certified corrective exercise specialist Thanaphon Chamnanyantarakij (Boss) travels to hotels and private residences.",
+      "description": "Private, in-residence rehab exercise coaching in Bangkok. Certified corrective exercise specialist Thanaphon Chamnanyantarakij (Boss) travels to hotels and private residences in central Bangkok, and also offers weight-loss and muscle-building training.",
       "url": "https://www.example.com/",
       "image": "https://images.unsplash.com/photo-1758875569423-e9d43652b0a9?w=1200&q=70",
       "telephone": "+66-00-000-0000",
       "priceRange": "฿฿฿฿",
-      "areaServed": ["Sukhumvit", "Sathorn", "Silom", "Riverside", "Ploenchit", "Thonglor", "Bangkok"],
+      "areaServed": ["Sukhumvit", "Sathorn", "Silom", "Ploenchit", "Thonglor", "Bangkok"],
       "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "06:00", "closes": "22:00" },
       "address": { "@type": "PostalAddress", "addressLocality": "Bangkok", "addressCountry": "TH" },
       "founder": { "@id": "https://www.example.com/#boss" }
@@ -63,12 +63,27 @@
       ]
     },
     {
+      "@type": "Service",
+      "serviceType": "Weight-loss consult and training",
+      "provider": { "@id": "https://www.example.com/#business" },
+      "areaServed": "Central Bangkok",
+      "offers": { "@type": "Offer", "name": "Single private session (60 min)", "price": "2500", "priceCurrency": "THB" }
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Muscle-building training",
+      "provider": { "@id": "https://www.example.com/#business" },
+      "areaServed": "Central Bangkok",
+      "offers": { "@type": "Offer", "name": "Single private session (60 min)", "price": "2500", "priceCurrency": "THB" }
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         { "@type": "Question", "name": "Do you bring equipment to my hotel?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Boss brings a mat, bands, foam roller and light weights and sets up before you arrive. You need only a clear 2 × 3 m space." } },
         { "@type": "Question", "name": "Is rehab exercise safe after an injury?", "acceptedAnswer": { "@type": "Answer", "text": "Every new client completes a health screening. Boss is not a doctor or physiotherapist. After a recent injury or surgery he asks for clearance from your doctor or physio and works within their advice." } },
-        { "@type": "Question", "name": "Do you offer general gym or weight-loss training?", "acceptedAnswer": { "@type": "Answer", "text": "Boss does rehab and corrective exercise only. He does not take clients for general gym or commercial fitness training, such as weight loss, muscle building, bootcamps or group classes." } },
-        { "@type": "Question", "name": "Which areas of Bangkok do you cover?", "acceptedAnswer": { "@type": "Answer", "text": "Sukhumvit, Thonglor, Ploenchit, Sathorn, Silom, the Riverside and central Bangkok, with no travel fee. Further locations, including Hua Hin and Pattaya residences, are available on request." } }
+        { "@type": "Question", "name": "Do you offer general gym or weight-loss training?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Alongside rehab, Boss offers weight-loss consults and training, and muscle-building training, all one-to-one at ฿2,500 an hour. He does not run bootcamps or group classes." } },
+        { "@type": "Question", "name": "Which areas of Bangkok do you cover?", "acceptedAnswer": { "@type": "Answer", "text": "Sukhumvit, Thonglor, Ploenchit, Sathorn, Silom, and Silom only, with no travel fee. Boss does not travel to other districts or provinces." } },
+        { "@type": "Question", "name": "How do I pay?", "acceptedAnswer": { "@type": "Answer", "text": "By QR code or cash only, paid at your session." } }
       ]
     }
   ]
@@ -584,11 +599,15 @@ footer a:hover{color:var(--gold-2)}
   .hero-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px;padding-top:20px;font-size:12px}
   .hero-proof b{font-size:22px}
 }
+
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;align-items:stretch}
+.svc-note{text-align:center;margin:28px auto 0;font-size:14px;color:var(--muted);max-width:640px}
+@media (max-width:720px){.svc-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body class="no-js">
 
-<div class="announce"><a href="#book"><span class="ann-long">Now booking October at Sukhumvit, Sathorn &amp; Riverside residences · </span><b>Free first assessment</b> &rsaquo;</a></div>
+<div class="announce"><a href="#book"><span class="ann-long">Now booking October at Sukhumvit, Sathorn &amp; Silom residences · </span><b>Free first assessment</b> &rsaquo;</a></div>
 
 <header class="site-top">
   <div class="site-top-inner">
@@ -599,6 +618,7 @@ footer a:hover{color:var(--gold-2)}
       <nav aria-label="Main">
         <a href="#coach">Meet Boss</a>
         <a href="#programmes">Problems</a>
+        <a href="#services">Services</a>
         <a href="#venues">Where We Train</a>
         <a href="#pricing">Membership</a>
         <a href="#faq">Concierge</a>
@@ -621,6 +641,7 @@ footer a:hover{color:var(--gold-2)}
       <a href="#credentials">Certificate</a>
       <a href="#venues">Where We Train</a>
       <a href="#programmes">Problems</a>
+        <a href="#services">Services</a>
       <a href="#film">Film</a>
       <a href="#stories">Client Stories</a>
       <a href="#pricing">Membership</a>
@@ -783,7 +804,7 @@ footer a:hover{color:var(--gold-2)}
       <div class="section-head reveal">
         <p class="eyebrow">Where we train</p>
         <h2 id="venues-title">Wherever you are<br><em class="serif">most at ease.</em></h2>
-        <p>We come to you across central Bangkok with no travel fee. All we need is a clear space of about 2 × 3 metres.</p>
+        <p>We come to you in central Bangkok only (Sukhumvit, Thonglor, Ploenchit, Sathorn and Silom), with no travel fee. All we need is a clear space of about 2 × 3 metres.</p>
       </div>
       <div class="venues">
         <article class="venue reveal">
@@ -937,7 +958,7 @@ footer a:hover{color:var(--gold-2)}
         <figure class="review reveal">
           <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
           <blockquote>“My neck and shoulders were wrecked after a long-haul flight. Boss was in our suite before I'd finished breakfast. Absolute discretion, real results.”</blockquote>
-          <div class="cap"><div><cite>Amélie R.</cite><span>Hotel guest · Riverside · Paris</span></div></div>
+          <div class="cap"><div><cite>Amélie R.</cite><span>Hotel guest · Sukhumvit · Paris</span></div></div>
         </figure>
         <figure class="review reveal">
           <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
@@ -961,6 +982,33 @@ footer a:hover{color:var(--gold-2)}
   </section>
 
   <!-- Pricing -->
+  <section class="section " id="services" aria-labelledby="svc-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Also available</p>
+        <h2 id="svc-title">Beyond rehab, <em class="serif">your wider goals.</em></h2>
+        <p>Boss also coaches weight loss and muscle building, with the same private, come-to-you service.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="plan reveal">
+          <span class="plan-tag">Weight loss</span>
+          <h3>Weight-loss consult &amp; training</h3>
+          <p class="plan-desc">A steady plan you can keep up with</p>
+          <ul><li>A one-to-one consult on your goal, your habits and your routine</li><li>Simple, realistic advice on eating and daily movement</li><li>Private training built around your body and any old injuries</li><li>Progress checked and the plan adjusted as you go</li></ul>
+          <a class="btn btn-line" href="#book" data-service="Weight-loss consult & training">Reserve a weight-loss consult</a>
+        </article>
+        <article class="plan reveal">
+          <span class="plan-tag">Muscle building</span>
+          <h3>Muscle-building training</h3>
+          <p class="plan-desc">Get stronger, safely and with good form</p>
+          <ul><li>Strength programme written for your goal and experience</li><li>Careful technique coaching, so you build without getting hurt</li><li>Progressive overload with the kit I bring to you</li><li>Regular re-tests, so you can see the gains</li></ul>
+          <a class="btn btn-line" href="#book" data-service="Muscle-building training">Reserve muscle training</a>
+        </article>
+      </div>
+      <p class="svc-note reveal">Same rate as rehab: ฿2,500 an hour, or use any session pack. Rehab and corrective exercise are still my speciality.</p>
+    </div>
+  </section>
+
   <section class="section cream" id="pricing" aria-labelledby="price-title">
     <div class="wrap">
       <div class="section-head reveal">
@@ -997,7 +1045,7 @@ footer a:hover{color:var(--gold-2)}
           <a class="btn btn-line" href="#book" data-service="Monthly residence membership">Apply for membership</a>
         </article>
       </div>
-      <p class="plan-foot reveal">Rehab and corrective exercise only, not general gym or commercial fitness training. Corporate, yacht and out-of-town retreats (Hua Hin, Pattaya, Phuket) are quoted individually. Prices in Thai Baht, including VAT.<sup>5</sup></p>
+      <p class="plan-foot reveal">Rehab, weight-loss and muscle-building training at the same rate. Central Bangkok only. Pay by QR code or cash. Prices in Thai Baht, including VAT.<sup>5</sup></p>
     </div>
   </section>
 
@@ -1014,7 +1062,7 @@ footer a:hover{color:var(--gold-2)}
       <div class="perks">
         <div class="perk reveal"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><b>Flexible rescheduling</b><span>Free up to 12 hours before</span></div></div>
         <div class="perk reveal"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6 9 17l-5-5"/></svg><div><b>Free first assessment</b><span>No obligation to continue</span></div></div>
-        <div class="perk reveal"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><div><b>Charge to your room</b><span>Or card, transfer and invoice</span></div></div>
+        <div class="perk reveal"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><div><b>Simple payment</b><span>QR code or cash</span></div></div>
         <div class="perk reveal"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><div><b>A real concierge</b><span>WhatsApp, LINE or phone</span></div></div>
       </div>
     </div>
@@ -1027,11 +1075,12 @@ footer a:hover{color:var(--gold-2)}
       <div class="faq">
         <details><summary>Do you bring equipment to my hotel?</summary><p>Yes. Boss brings a mat, bands, a foam roller and light weights, which is all most rehab work needs. You need only a clear space of about 2 × 3 metres. We coordinate service-lift access with your hotel directly.</p></details>
         <details><summary>Is rehab exercise safe after an injury or surgery?</summary><p>Every new client completes a health screening at the assessment. After a recent injury or surgery, Boss asks for clearance from your doctor or physio and works within their advice from the very first session. Exercise supports recovery; it doesn't replace medical treatment, and Boss does not diagnose.</p></details>
-        <details><summary>Do you offer general gym or weight-loss training?</summary><p>Boss does rehab and corrective exercise only. He does not take clients for general gym or commercial fitness training, such as weight loss, muscle building, bootcamps or group classes. If you are not sure whether your goal fits, just ask.</p></details>
-        <details><summary>Which areas of Bangkok do you cover?</summary><p>Sukhumvit, Thonglor, Ploenchit, Sathorn, Silom, the Riverside and the rest of central Bangkok, with no travel fee. Hua Hin, Pattaya and Phuket residences, and yachts, can be arranged on request.</p></details>
+        <details><summary>Do you offer weight-loss or muscle-building training?</summary><p>Yes. Alongside rehab, Boss offers weight-loss consults and training, and muscle-building training, all one-to-one at the same ฿2,500 an hour. He does not run bootcamps or group classes.</p></details>
+        <details><summary>Which areas of Bangkok do you cover?</summary><p>Sukhumvit, Thonglor, Ploenchit, Sathorn, Silom, and Silom only, with no travel fee. Boss does not travel to other districts or provinces.</p></details>
         <details><summary>I haven't exercised in years. Is this for me?</summary><p>Absolutely. Most of our clients are not athletes. Private coaching is the safest way to start again, because every exercise is adapted to you from the first minute.</p></details>
         <details><summary>How is my privacy protected?</summary><p>Boss signs a confidentiality agreement on request. We never photograph, name or post about a client without written permission, and your health information is stored securely and never shared.</p></details>
-        <details><summary>What should I wear, and what do I need to prepare?</summary><p>Comfortable, close-fitting clothing and grip socks, which we can supply. We bring the equipment, towels and water. Please eat lightly at least an hour before.</p></details>
+        <details><summary>Do I need to prepare anything?</summary><p>No. Wear whatever you are comfortable in. We bring the equipment, towels and water, so there is nothing to prepare.</p></details>
+        <details><summary>How do I pay?</summary><p>By QR code or cash only, paid at your session.</p></details>
         <details><summary>What is your cancellation policy?</summary><p>You can reschedule for free up to 12 hours before your session. Later cancellations are charged at 50%, and no-shows in full, because your coach and the equipment have been reserved for you alone.</p></details>
       </div>
     </div>
@@ -1058,6 +1107,8 @@ footer a:hover{color:var(--gold-2)}
             <option>Single private session</option>
             <option selected>Signature 10 programme</option>
             <option>Monthly residence membership</option>
+            <option>Weight-loss consult &amp; training</option>
+            <option>Muscle-building training</option>
             <option>Not sure yet, advise me</option>
           </select></div>
         <div class="field"><label for="f-date">Preferred date</label><input id="f-date" name="date" type="date" required></div>
