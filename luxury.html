@@ -535,11 +535,47 @@ footer a:hover{color:var(--gold-2)}
   .fab span{display:none}
   .fab{width:56px;padding:0;justify-content:center}
 }
+
+/* ---------- Mobile touch & fit fixes ---------- */
+@media (max-width:720px){
+  .announce a{display:block;line-height:40px}
+  .logo{min-height:44px}
+  .subnav-title{display:inline-flex;align-items:center;min-height:44px}
+  .dots{gap:14px}
+  .dots button{position:relative}
+  .dots button::after{content:"";position:absolute;inset:-18px -7px}
+  .notes a{padding:10px 2px}
+  .cert-seal small{font-size:11px}
+  .cert-sign{min-width:84px;font-size:17px}
+  .cert-seal svg{width:44px;height:44px}
+}
+@media (max-width:720px){
+  .top-icons{gap:6px}
+  .top-icons a{width:44px;height:44px}
+  .plan-tag{font-size:12px}
+}
+@media (max-width:720px){
+  footer li a{display:inline-block;padding:9px 0}
+  .btn-sm{height:44px}
+  .cred-single .cert-seal small{font-size:11px}
+}
+
+@media (max-width:720px){
+  h1,h2,.h2{text-wrap:balance}
+  .ann-long{display:none}
+  .notes a{display:inline;padding:10px 2px}
+  .split-media figcaption{flex-direction:column;align-items:flex-start;gap:10px;padding:14px 16px}
+}
+@media (max-width:720px){
+  .hero::after{background:linear-gradient(0deg,rgba(20,17,15,.92) 0%,rgba(20,17,15,.82) 58%,rgba(20,17,15,.28) 100%)}
+  .venue::after,.card::after,.slide::after{background:linear-gradient(180deg,rgba(20,17,15,0) 25%,rgba(20,17,15,.88))}
+  .book::after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(20,17,15,.4)}
+}
 </style>
 </head>
 <body class="no-js">
 
-<div class="announce"><a href="#book">Now booking October at Sukhumvit, Sathorn &amp; Riverside residences · <b>Complimentary first assessment</b> &rsaquo;</a></div>
+<div class="announce"><a href="#book"><span class="ann-long">Now booking October at Sukhumvit, Sathorn &amp; Riverside residences · </span><b>Complimentary first assessment</b> &rsaquo;</a></div>
 
 <header class="site-top">
   <div class="site-top-inner">
